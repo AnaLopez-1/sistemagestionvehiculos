@@ -54,7 +54,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="271.0" prefWidth="645.0">
                <children>
-                  <TableView fx:id="tblListCliente" layoutX="7.0" layoutY="7.0" prefHeight="206.0" prefWidth="412.0">
+                  <TableView fx:id="tblListVehiculo" layoutX="7.0" layoutY="7.0" prefHeight="206.0" prefWidth="412.0">
                     <columns>
                       <TableColumn fx:id="tbcNumeroMatricula" prefWidth="123.0" text="Numero Matricula" />
                       <TableColumn fx:id="tbcMarca" minWidth="5.0" prefWidth="104.0" text="Marca" />

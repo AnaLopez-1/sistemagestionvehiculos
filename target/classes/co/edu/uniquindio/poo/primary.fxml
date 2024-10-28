@@ -11,7 +11,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.PrimaryController">
    <children>
-      <Label text="Bienvenidos a JavaFX" />
+      <Label text="Bienvenidos a Consesionario UQ" />
       <Button fx:id="primaryButton" onAction="#onOpenCrudVehiculo" text="Gestión de vehiculos" />
    </children>
    <padding>
