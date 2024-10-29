@@ -6,6 +6,8 @@ import java.util.ResourceBundle;
 import co.edu.uniquindio.poo.App;
 import co.edu.uniquindio.poo.controller.VehiculoController;
 import co.edu.uniquindio.poo.model.Auto;
+import co.edu.uniquindio.poo.model.Camioneta;
+import co.edu.uniquindio.poo.model.Moto;
 import co.edu.uniquindio.poo.model.Vehiculo;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -91,7 +93,7 @@ public class VehiculoViewController {
 
     @FXML
     void initialize() {
-        vehiculoController = new VehiculoController(null);
+        vehiculoController = new VehiculoController(app.consesionario);
 
         initView();
     }
@@ -107,7 +109,7 @@ public class VehiculoViewController {
         tbcNumeroMatricula.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNumeroMatricula()));
         tbcMarca.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getMarca()));
         tbcModelo.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getModelo()));
-        tbcAñoFabricacion.setCellValueFactory(cellData -> new SimpleStringProperty());
+        tbcAñoFabricacion.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getAñoFabricacion()));
     }
 
     private void obtenerVehiculos() {
@@ -179,3 +181,4 @@ public class VehiculoViewController {
         this.app = app;
     }
 }
+
